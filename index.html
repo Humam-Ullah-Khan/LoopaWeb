@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>LOOPAWEB - Home</title>
+    <link
+      rel="icon"
+      href="project-images/favicon.png"
+      type="image/png"
+      style="border-radius: 50%"
+    />
+
+    <link rel="stylesheet" href="./project-css/styles.css" />
+
+    <!-- {{-- Bootstrap Css Link  --}} -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <!-- {{-- Remix Icon --}} -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Flatpickr Material Blue Theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_blue.css"
+    />
+  </head>
+
+  <body>
+    <nav id="default-navbar" class="navbar navbar-expand-lg py-4 px-4">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="./project-images/Logo.png"
+            alt="loopaWeb Logo"
+            width="190px"
+          />
+        </a>
+        <!-- Toggler for mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-secondary fw-semibold" href="#hero-sec"
+                ><i class="ri-home-9-fill"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary fw-semibold" href="#about-us"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary fw-semibold"
+                href="#web-industries"
+              >
+                Web Industries</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary fw-semibold" href="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary fw-semibold" href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary fw-semibold"
+                href="#fiverr-reviews"
+                >Reviews</a
+              >
+            </li>
+          </ul>
+          <!-- Request Pricing Button -->
+          <a href="#" class="openRequestPricingModal btn btn-primary px-4 py-2"
+            >Request pricing</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="scrolled-navbar"
+      class="fixed-top bg-white border-bottom"
+      style="display: none; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)"
+    >
+      <div class="container-fluid p-0">
+        <div
+          class="d-flex justify-content-between align-items-center py-2 px-md-4 px-1"
+        >
+          <div class="d-flex align-items-center">
+            <div class="position-relative d-inline-block">
+              <img
+                src="./project-images/CEO-profile.webp"
+                class="rounded-circle"
+                style="width: 75px; height: 75px; object-fit: cover"
+              />
+              <span
+                style="width: 15px; height: 15px; bottom: 1px; right: -2px"
+                class="position-absolute bg-success border border-white rounded-circle"
+              ></span>
+            </div>
+            <div class="ms-2">
+              <div class="fw-bold fs-4">Humam Ullah</div>
+              <div
+                class="small text-muted my-1"
+                style="
+                  font-size: 0.75em;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                "
+              >
+                C.E.O @ LoopaWeb Software
+              </div>
+              <div class="d-flex align-items-center" style="font-size: 0.75em">
+                <img
+                  src="/project-images/saylani.png"
+                  alt="saylani-certified"
+                  width="15px"
+                  class="me-1"
+                />
+                <span class="fw-semibold">Certified</span>
+                <i class="ri-verified-badge-fill mx-1 text-primary"></i>
+                <i class="ri-star-fill text-primary me-1 ms-2"></i>
+                <span class="fw-bold">4.4</span>
+                <span class="text-decoration-underline ms-1">( 4 )</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-2 flex-column py-2">
+            <a
+              href="#"
+              class="openTawkChat btn btn-primary me-2 position-relative d-flex align-items-center"
+            >
+              <i
+                class="ri-checkbox-blank-circle-fill me-2"
+                style="font-size: 7px; color: #31ff9f"
+              ></i>
+              Chat with us
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger"
+                >2</span
+              >
+            </a>
+            <a href="#" class="openBookingModal btn btn-primary me-2">
+              <i class="ri-vidicon-line me-2"></i> Book a call
+            </a>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg py-0 bg-white">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto gap-4">
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#hero-sec">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#about-us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#web-industries"
+                  >Web industries</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#portfolio"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#fiverr-reviews"
+                  >Reviews</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- {{-- Hero Section --}} -->
+    <div
+      class="home-hero-section text-white container-fluid py-md-0 py-5 position-relative overflow-hidden"
+      id="hero-sec"
+    >
+      <!-- Video Background -->
+      <video
+        class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+        style="z-index: 0; object-fit: cover; min-height: 100%; min-width: 100%"
+        autoplay
+        loop
+        muted
+        playsinline
+      >
+        <source src="/project-images/video-01.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <!-- Optional: Overlay for readability -->
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100"
+        style="background: rgba(0, 0, 0, 0.45); z-index: 1"
+      ></div>
+      <div
+        class="row justify-content-center align-items-center position-relative"
+        style="z-index: 2"
+      >
+        <!-- Left Side: Text and Buttons -->
+        <div
+          class="col-12 mb-4 mb-md-0 d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="mb-2 text-center">
+            <img src="/project-images/certified-img.png" alt="" width="250px" />
+            <h4 class="my-3">
+              Meet Humam Ullah,
+              <span style="font-size: 15px">C.E.O Behind</span>
+            </h4>
+          </div>
+          <h2 class="fw-bold mb-3 text-center">
+            Your <span class="text-primary">Trusted</span> Web App Development
+            Company <br />
+            for Every Industry!
+          </h2>
+          <div class="d-flex align-items-center py-3">
+            <!-- Fiverr Icon -->
+            <img
+              src="/project-images/fiverrIcon.svg"
+              alt="Fiverr Badge"
+              style="
+                height: 60px;
+                width: 60px;
+                border-radius: 16px;
+                background: #1dbf73;
+              "
+            />
+
+            <!-- Right Side Content -->
+            <div class="ms-3">
+              <span
+                style="
+                  background: #b8f7ca;
+                  color: #00934f;
+                  border-radius: 8px;
+                  padding: 1px 10px;
+                  font-size: 12px;
+                  vertical-align: middle;
+                "
+                >Best Seller</span
+              >
+              <div>
+                <span
+                  style="
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    color: #fff;
+                    letter-spacing: -1.5px;
+                  "
+                  >fiverr<i
+                    class="ri-checkbox-blank-circle-fill text-success"
+                    style="font-size: 7px"
+                  ></i
+                ></span>
+                <!-- Stars -->
+                <span>
+                  <i class="ri-star-s-fill" style="color: #f7d100"></i>
+                  <i class="ri-star-s-fill" style="color: #f7d100"></i>
+                  <i class="ri-star-s-fill" style="color: #f7d100"></i>
+                  <i class="ri-star-s-fill" style="color: #f7d100"></i>
+                  <i class="ri-star-s-fill" style="color: #f7d100"></i>
+                </span>
+              </div>
+              <div>
+                <a
+                  href="https://www.fiverr.com/humam_ullah?public_mode=true"
+                  style="color: #fff; font-size: 1rem; text-decoration: none"
+                >
+                  (Click to see
+                  <span
+                    style="
+                      font-weight: bold;
+                      text-decoration: underline;
+                      color: #fff;
+                    "
+                    >4 Reviews</span
+                  >)
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-3">
+            <a
+              href="#"
+              class="openTawkChat btn btn-primary me-2 mb-2 py-2 px-4"
+            >
+              <i class="ri-circle-fill" style="color: #1dbf73"></i> Chat with
+              us</a
+            >
+            <a href="#" class="openBookingModal btn btn-primary mb-2 py-2 px-4">
+              <i class="ri-video-on-line"></i> Book a meeting</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- {{-- About Us --}} -->
+    <div class="container py-5" id="about-us">
+      <div class="text-center mx-auto" style="max-width: 700px">
+        <h2 class="fw-bold">About Us</h2>
+        <p class="text-muted">
+          LoppaWeb is a web app development company focused on creating powerful
+          and user-friendly web applications. Our team is dedicated to designing
+          and building solutions that are responsive, efficient, and tailored to
+          the needs of businesses and individuals. We strive to deliver reliable
+          and clear services that help our clients grow and succeed in the
+          digital world.
+        </p>
+      </div>
+
+      <div class="row my-5 align-items-center">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-4 p-0">
+              <div class="position-relative text-center">
+                <img
+                  src="./project-images/CEO-profile-2.png"
+                  alt="Humam Ullah"
+                  class="img-fluid"
+                  style="max-width: 200px"
+                />
+                <div
+                  class="position-absolute"
+                  style="
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: -1;
+                  "
+                >
+                  <img
+                    src="/project-images/saylani.png"
+                    alt="saylani"
+                    style="width: 250px; opacity: 0.2"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div class="mt-5 ms-md-5">
+                <h5 class="fw-bold">Humam Ullah</h5>
+                <p class="text-muted mb-1 fw-semibold">
+                  <i>C.E.O</i> & Website Developer
+                </p>
+                <div class="d-flex align-items-center mb-2">
+                  <img
+                    src="/project-images/saylani.png"
+                    alt="Saylani"
+                    style="width: 20px; height: 20px"
+                    class="me-2"
+                  />
+                  <span class="fw-bold">Saylani</span>
+                  <span class="ms-1">Certified</span>
+                </div>
+                <p class="text-muted small">
+                  Humam Ullah, the CEO of LoopaWeb, leads the company with a
+                  focus on new ideas and doing things well.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="d-flex justify-content-end align-items-center mb-3">
+            <a href="#" class="text-primary fw-bold">See all members (5)</a>
+          </div>
+          <div id="teamCarousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="card border-0">
+                      <div class="card-body d-flex align-items-center">
+                        <img
+                          src="./project-images/CEO-profile.jpg"
+                          class="rounded-circle me-3"
+                          style="width: 60px; height: 60px; object-fit: cover"
+                        />
+                        <div>
+                          <h6 class="fw-bold mb-0">Zaka</h6>
+                          <p class="text-muted small mb-0">COO-Founder</p>
+                        </div>
+                      </div>
+                      <div class="card-footer bg-white border-0">
+                        <p class="text-muted small">
+                          Zaka Ullah, the COO of LoopaWeb, guides the company
+                          with a focus on fresh ideas and doing things
+                          effectively. His clear vision helps the team work
+                          together.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card border-0">
+                      <div class="card-body d-flex align-items-center">
+                        <img
+                          src="https://media.licdn.com/dms/image/v2/D4D03AQG0VPtus-DQpA/profile-displayphoto-shrink_100_100/B4DZT66pkRHwAU-/0/1739376466658?e=1755734400&v=beta&t=tTHPX6SJUEc7-RhoVwXePix_m7WFhB0oK3TRooIlDqA"
+                          class="rounded-circle me-3"
+                          style="width: 60px; height: 60px; object-fit: cover"
+                        />
+                        <div>
+                          <h6 class="fw-bold mb-0">Khabab</h6>
+                          <p class="text-muted small mb-0">Sr. App Developer</p>
+                        </div>
+                      </div>
+                      <div class="card-footer bg-white border-0">
+                        <p class="text-muted small">
+                          Muhammad Khabab, a senior mobile app developer,
+                          creates user-friendly mobile applications with a focus
+                          on simplicity, functionality, and innovation.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="card border-0">
+                      <div class="card-body d-flex align-items-center">
+                        <img
+                          src="./project-images/sami.jpg"
+                          class="rounded-circle me-3"
+                          style="width: 60px; height: 60px; object-fit: cover"
+                        />
+                        <div>
+                          <h6 class="fw-bold mb-0">Sami</h6>
+                          <p class="text-muted small mb-0">
+                            Sr. Bakend Developer
+                          </p>
+                        </div>
+                      </div>
+                      <div class="card-footer bg-white border-0">
+                        <p class="text-muted small">
+                          Sami ur Rahman, a senior backend developer, builds
+                          robust and scalable server-side systems with a focus
+                          on performance, security, and seamless integration.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card border-0">
+                      <div class="card-body d-flex align-items-center">
+                        <img
+                          src="./project-images/safi.jpg"
+                          class="rounded-circle me-3"
+                          style="width: 60px; height: 60px; object-fit: cover"
+                        />
+                        <div>
+                          <h6 class="fw-bold mb-0">Safi</h6>
+                          <p class="text-muted small mb-0">Sr. Video Editor</p>
+                        </div>
+                      </div>
+                      <div class="card-footer bg-white border-0">
+                        <p class="text-muted small">
+                          Safi Ullah, a senior video editor, crafts compelling
+                          and audience-driven content with a blend of technical
+                          precision and creative storytelling.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end gap-2 mt-3">
+              <button
+                class="btn btn-primary rounded-circle"
+                type="button"
+                data-bs-target="#teamCarousel"
+                data-bs-slide="prev"
+              >
+                <i class="ri-arrow-left-line"></i>
+              </button>
+              <button
+                class="btn btn-primary rounded-circle"
+                type="button"
+                data-bs-target="#teamCarousel"
+                data-bs-slide="next"
+              >
+                <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="mt-5" />
+    </div>
+
+    <!-- {{-- Web Industries --}} -->
+    <div class="web-industries py-5" id="web-industries">
+      <div class="container">
+        <div class="col-12 mb-3">
+          <h2 class="fw-bold">Web Industries</h2>
+
+          <div class="col-md-6">
+            <small>
+              <b>LoopaWeb</b> builds websites for every industry. Our
+              experienced team creates powerful and responsive websites for
+              education, healthcare, e-commerce, entertainment, and beyond. Each
+              website is crafted to meet unique goals and deliver real results.
+              With LookaWeb, every industry gets high-quality, user-friendly web
+              solutions.
+            </small>
+          </div>
+        </div>
+        <div class="position-relative">
+          <button
+            id="industries-prev"
+            class="btn btn-light rounded-circle position-absolute top-50 start-0 translate-middle-y z-2"
+            style="left: -30px"
+            type="button"
+          >
+            <i class="ri-arrow-left-line"></i>
+          </button>
+          <div
+            id="industries-carousel"
+            class="d-flex flex-nowrap overflow-auto"
+            style="scroll-behavior: smooth; gap: 24px"
+          >
+            <div
+              class="industry-card bg-secondary-subtle rounded-2 flex-shrink-0"
+              style="width: 320px"
+            >
+              <img
+                src="/project-images/e-commerce.png"
+                class="d-block w-100 rounded-top-2"
+                alt="E-commerce Website"
+              />
+              <div
+                class="d-flex justify-content-between align-items-center p-2"
+              >
+                <p class="m-0 fw-semibold">E-commerce Website</p>
+                <a class="btn btn-light">Learn more</a>
+              </div>
+            </div>
+            <div
+              class="industry-card bg-secondary-subtle rounded-2 flex-shrink-0"
+              style="width: 320px"
+            >
+              <img
+                src="/project-images/Business.png"
+                class="d-block w-100 rounded-top-2"
+                alt="Business Website"
+              />
+              <div
+                class="d-flex justify-content-between align-items-center p-2"
+              >
+                <p class="m-0 fw-semibold">Business Website</p>
+                <a class="btn btn-light">Learn more</a>
+              </div>
+            </div>
+            <div
+              class="industry-card bg-secondary-subtle rounded-2 flex-shrink-0"
+              style="width: 320px"
+            >
+              <img
+                src="/project-images/Real-Estate.png"
+                class="d-block w-100 rounded-top-2"
+                alt="Real-Estate Website"
+              />
+              <div
+                class="d-flex justify-content-between align-items-center p-2"
+              >
+                <p class="m-0 fw-semibold">Real-Estate Website</p>
+                <a class="btn btn-light">Learn more</a>
+              </div>
+            </div>
+            <div
+              class="industry-card bg-secondary-subtle rounded-2 flex-shrink-0"
+              style="width: 320px"
+            >
+              <img
+                src="/project-images/HealthCare.png"
+                class="d-block w-100 rounded-top-2"
+                alt="Health Care Website"
+              />
+              <div
+                class="d-flex justify-content-between align-items-center p-2"
+              >
+                <p class="m-0 fw-semibold">Health Care Website</p>
+                <a class="btn btn-light">Learn more</a>
+              </div>
+            </div>
+            <div
+              class="industry-card bg-secondary-subtle rounded-2 flex-shrink-0"
+              style="width: 320px"
+            >
+              <img
+                src="/project-images/Educational.png"
+                class="d-block w-100 rounded-top-2"
+                alt="Education Website"
+              />
+              <div
+                class="d-flex justify-content-between align-items-center p-2"
+              >
+                <p class="m-0 fw-semibold">Education Website</p>
+                <a class="btn btn-light">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <button
+            id="industries-next"
+            class="btn btn-light rounded-circle position-absolute top-50 end-0 translate-middle-y z-2"
+            style="right: -30px"
+            type="button"
+          >
+            <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+
+        <hr class="mt-5" />
+      </div>
+    </div>
+
+    <!-- {{-- portfolio --}} -->
+    <div class="portfolio-section py-5" id="portfolio">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <h2 class="fw-bold">Portfolio</h2>
+            <p class="text-secondary mb-3 fw-semibold">
+              LoopaWeb has successfully delivered 20+ web and mobile projects
+              for clients in various industries. Our clients love us, giving 4+
+              reviews and a 5-star rating. We help bring your ideas to life with
+              care and quality.
+            </p>
+            <p class="text-secondary mb-4 fw-semibold">
+              Book a meeting for a simple chat on how to build your app or
+              website. Our team will show you each step to make your idea real.
+            </p>
+            <!-- Book free consultation button -->
+            <a href="#" class="openBookingModal btn btn-primary">
+              <i class="ri-video-on-line"></i> Book free consultation
+            </a>
+          </div>
+          <div class="col-lg-7">
+            <div class="position-relative">
+              <button
+                id="portfolio-prev"
+                class="btn btn-light rounded-circle position-absolute top-50 start-0 translate-middle-y z-2"
+                style="left: -30px"
+                type="button"
+              >
+                <i class="ri-arrow-left-line"></i>
+              </button>
+              <div
+                id="portfolio-carousel"
+                class="d-flex flex-nowrap overflow-auto gap-3"
+              >
+                <div
+                  class="portfolio-card bg-white rounded-3 flex-shrink-0"
+                  style="width: 370px"
+                >
+                  <img
+                    src="/project-images/portfolio-01.png"
+                    class="w-100 rounded-2 shadow-sm"
+                    alt="UBU App"
+                  />
+                  <div class="d-flex justify-content-between p-2">
+                    <div>
+                      <h6 class="fw-semibold mb-1">Vegetable Store</h6>
+                      <p class="mb-2 text-muted">Online Delivery website</p>
+                    </div>
+                    <a class="btn btn-light align-self-start">Learn more</a>
+                  </div>
+                </div>
+                <div
+                  class="portfolio-card bg-white rounded-3 flex-shrink-0"
+                  style="width: 370px"
+                >
+                  <img
+                    src="/project-images/portfolio-02.png"
+                    class="w-100 rounded-2 shadow-sm"
+                    alt="HVAC HUB"
+                  />
+                  <div class="d-flex justify-content-between p-2">
+                    <div>
+                      <h6 class="fw-semibold mb-1">Business</h6>
+                      <p class="mb-2 text-muted">Business Website</p>
+                    </div>
+                    <a class="btn btn-light align-self-start">Learn more</a>
+                  </div>
+                </div>
+                <div
+                  class="portfolio-card bg-white rounded-3 flex-shrink-0"
+                  style="width: 370px"
+                >
+                  <img
+                    src="/project-images/portfolio-03.png"
+                    class="w-100 rounded-2 shadow-sm"
+                    alt="EduPro LMS"
+                  />
+                  <div class="d-flex justify-content-between p-2">
+                    <div>
+                      <h6 class="fw-semibold mb-1">Education ( LMS )</h6>
+                      <p class="mb-2 text-muted">LMS Website</p>
+                    </div>
+                    <a class="btn btn-light align-self-start">Learn more</a>
+                  </div>
+                </div>
+                <div
+                  class="portfolio-card bg-white rounded-3 flex-shrink-0"
+                  style="width: 370px"
+                >
+                  <img
+                    src="/project-images/portfolio-04.jpg"
+                    class="w-100 rounded-2 shadow-sm"
+                    alt="E-Shop"
+                  />
+                  <div class="d-flex justify-content-between p-2">
+                    <div>
+                      <h6 class="fw-semibold mb-1">E-Shop</h6>
+                      <p class="mb-2 text-muted">E-commerce Website</p>
+                    </div>
+                    <a class="btn btn-light align-self-start">Learn more</a>
+                  </div>
+                </div>
+              </div>
+              <button
+                id="portfolio-next"
+                class="btn btn-light rounded-circle position-absolute top-50 end-0 translate-middle-y z-2"
+                style="right: -30px"
+                type="button"
+              >
+                <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <hr class="mt-5" />
+      </div>
+    </div>
+
+    <!-- {{-- services --}} -->
+    <div class="services-section container py-5" id="services">
+      <div class="row align-items-stretch">
+        <!-- Left Info Block -->
+        <div
+          class="col-lg-4 mb-4 mb-lg-0 d-flex flex-column justify-content-center"
+        >
+          <h2 class="fw-bold mb-3">Services We Provide</h2>
+          <p class="text-secondary mb-4" style="max-width: 350px">
+            Discover our range of services to match your project needs. Provide
+            us with your details, and we'll customize a proposal just for you.
+          </p>
+          <button
+            class="openRequestPricingModal btn btn-primary px-4 py-2"
+            style="width: fit-content"
+          >
+            Request Pricing
+          </button>
+        </div>
+        <!-- Services Carousel -->
+        <div class="col-lg-8 position-relative">
+          <button
+            id="services-prev"
+            class="btn btn-primary rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 d-none"
+            style="left: -24px"
+            type="button"
+          >
+            <i class="ri-arrow-left-line"></i>
+          </button>
+          <div
+            id="services-carousel"
+            class="d-flex flex-nowrap overflow-auto gap-4 px-2"
+            style="scroll-behavior: smooth"
+          >
+            <!-- Service Card 1 -->
+            <div
+              class="service-card bg-white border rounded-3 flex-shrink-0 p-4"
+              style="width: 280px; min-height: 230px"
+            >
+              <div class="mb-3">
+                <img
+                  src="/project-images/Website-dev.svg"
+                  alt="Website Dev"
+                  style="height: 38px"
+                />
+              </div>
+              <h5 class="fw-bold mb-2">Website Development</h5>
+              <ul class="list-unstyled mb-2">
+                <li class="d-flex align-items-center mb-2">
+                  <i class="ri-checkbox-circle-line text-primary me-2"></i
+                  >Custom Website
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <i class="ri-checkbox-circle-line text-primary me-2"></i
+                  >Wordpress
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <i class="ri-checkbox-circle-line text-primary me-2"></i
+                  >Website Maintenance
+                </li>
+              </ul>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div
+              class="service-card bg-white border rounded-3 flex-shrink-0 p-4"
+              style="width: 280px; min-height: 230px"
+            >
+              <div class="mb-3">
+                <img
+                  src="/project-images/Ui-Ux.svg"
+                  alt="Mobile App"
+                  style="height: 38px"
+                />
+              </div>
+              <h5 class="fw-bold mb-2">UI/UX Design</h5>
+              <ul class="list-unstyled mb-2">
+                <li class="d-flex align-items-center mb-2">
+                  <i class="ri-checkbox-circle-line text-primary me-2"></i
+                  >Website Design
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <i class="ri-checkbox-circle-line text-primary me-2"></i
+                  >Landing Page Design
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <i class="ri-checkbox-circle-line text-primary me-2"></i>Ux
+                  Design
+                </li>
+              </ul>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div
+              class="service-card bg-white border rounded-3 flex-shrink-0 p-4"
+              style="width: 280px; min-height: 230px"
+            >
+              <div class="mb-3">
+                <img
+                  src="/project-images/e-commerce-dev.svg"
+                  alt="UI/UX"
+                  style="height: 38px"
+                />
+              </div>
+              <h5 class="fw-bold mb-2">Ecommerce Store</h5>
+              <ul class="list-unstyled mb-2">
+                <li class="d-flex align-items-center mb-2">
+                  <i class="ri-checkbox-circle-line text-primary me-2"></i
+                  >Website Development
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <i class="ri-checkbox-circle-line text-primary me-2"></i
+                  >Website Design
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <i class="ri-checkbox-circle-line text-primary me-2"></i
+                  >Website Maintenance
+                </li>
+              </ul>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div
+              class="service-card bg-white border rounded-3 flex-shrink-0 p-4"
+              style="width: 280px; min-height: 230px"
+            >
+              <div class="mb-3">
+                <img
+                  src="/project-images/software-dev.svg"
+                  alt="UI/UX"
+                  style="height: 38px"
+                />
+              </div>
+              <h5 class="fw-bold mb-2">Software Development</h5>
+              <ul class="list-unstyled mb-2">
+                <li class="d-flex align-items-center mb-2">
+                  <i class="ri-checkbox-circle-line text-primary me-2"></i
+                  >Software Development
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <i class="ri-checkbox-circle-line text-primary me-2"></i>Web
+                  App Development
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <i class="ri-checkbox-circle-line text-primary me-2"></i
+                  >Databases
+                </li>
+              </ul>
+            </div>
+            <!-- Add more cards as needed -->
+          </div>
+          <button
+            id="services-next"
+            class="btn btn-primary rounded-circle position-absolute top-50 end-0 translate-middle-y z-2"
+            style="right: -24px"
+            type="button"
+          >
+            <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+      </div>
+      <hr class="mt-5" />
+    </div>
+
+    <!-- Fiverr Reviews -->
+    <div class="fiverr-reviews-section py-5" id="fiverr-reviews">
+      <div class="container">
+        <!-- Header: Fiverr Verified and Review Count -->
+        <div class="d-flex align-items-center mb-2">
+          <span
+            class="badge bg-dark text-white me-2"
+            style="font-size: 0.95rem; letter-spacing: 1px"
+            >FIVERR <span style="color: #1dbf73">REVIEWS</span></span
+          >
+          <span class="fw-semibold text-muted" style="font-size: 1.1rem"
+            >4 Reviews</span
+          >
+        </div>
+        <div class="row g-4 align-items-start mb-4">
+          <!-- Star Bars -->
+          <div class="col-md-6">
+            <div class="mb-2">
+              <div class="d-flex align-items-center mb-1">
+                <span class="fw-semibold me-2">5 Stars</span>
+                <div
+                  class="flex-grow-1 bg-white rounded-pill me-2"
+                  style="height: 8px"
+                >
+                  <div
+                    class="bg-success rounded-pill"
+                    style="width: 75%; height: 8px"
+                  ></div>
+                </div>
+                <span class="text-muted small">(3)</span>
+              </div>
+              <div class="d-flex align-items-center mb-1">
+                <span class="fw-semibold me-2">4 Stars</span>
+                <div
+                  class="flex-grow-1 bg-white rounded-pill me-2"
+                  style="height: 8px"
+                >
+                  <div
+                    class="bg-info rounded-pill"
+                    style="width: 0%; height: 8px"
+                  ></div>
+                </div>
+                <span class="text-muted small">(0)</span>
+              </div>
+              <div class="d-flex align-items-center mb-1">
+                <span class="fw-semibold me-2">3 Stars</span>
+                <div
+                  class="flex-grow-1 bg-white rounded-pill me-2"
+                  style="height: 8px"
+                >
+                  <div
+                    class="bg-warning rounded-pill"
+                    style="width: 25%; height: 8px"
+                  ></div>
+                </div>
+                <span class="text-muted small">(1)</span>
+              </div>
+              <div class="d-flex align-items-center mb-1">
+                <span class="fw-semibold me-2">2 Stars</span>
+                <div
+                  class="flex-grow-1 bg-white rounded-pill me-2"
+                  style="height: 8px"
+                >
+                  <div
+                    class="bg-secondary rounded-pill"
+                    style="width: 0%; height: 8px"
+                  ></div>
+                </div>
+                <span class="text-muted small">(0)</span>
+              </div>
+              <div class="d-flex align-items-center mb-1">
+                <span class="fw-semibold me-2">1 Star</span>
+                <div
+                  class="flex-grow-1 bg-white rounded-pill me-2"
+                  style="height: 8px"
+                >
+                  <div
+                    class="bg-secondary rounded-pill"
+                    style="width: 0%; height: 8px"
+                  ></div>
+                </div>
+                <span class="text-muted small">(0)</span>
+              </div>
+            </div>
+            <div class="text-muted small">1-4 out of 4 Reviews</div>
+          </div>
+          <!-- Rating Breakdown -->
+          <div class="col-md-6">
+            <div class="fw-bold mb-2">Rating Breakdown</div>
+            <div class="d-flex flex-column gap-1">
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="text-muted">Seller communication level</span>
+                <span class="text-primary ms-2"
+                  ><i class="ri-star-s-fill"></i> 4.5</span
+                >
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="text-muted">Quality of delivery</span>
+                <span class="text-primary ms-2"
+                  ><i class="ri-star-s-fill"></i> 4.5</span
+                >
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="text-muted">Value of delivery</span>
+                <span class="text-primary ms-2"
+                  ><i class="ri-star-s-fill"></i> 4.3</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Reviews List -->
+        <div class="d-flex flex-column gap-4">
+          <!-- Review 1 -->
+          <div class="border rounded-3 p-4">
+            <div class="d-flex align-items-center mb-1">
+              <span class="fw-bold me-2">imran_dev999</span>
+              <span class="badge bg-light text-dark border me-2"
+                ><i class="ri-repeat-line me-1"></i>Repeat Client</span
+              >
+              <span class="badge bg-secondary me-2">Pakistan</span>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <span class="text-warning me-2">
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+              </span>
+              <span class="text-muted small">1 month ago</span>
+            </div>
+            <div class="mb-2">
+              Humam Ullah excelled in software development with PROFESSIONALISM
+              that truly stood out. Working with him was a pleasure; his DEEP
+              UNDERSTANDING, stellar responsiveness, and cooperative spirit made
+              the process seamless. Highly recommended!
+            </div>
+            <div class="text-muted small">
+              Helpful? <a href="#" class="text-decoration-none">Yes</a>
+              <a href="#" class="text-decoration-none ms-2">No</a>
+            </div>
+          </div>
+          <!-- Review 2 -->
+          <div class="rounded-3 border p-4">
+            <div class="d-flex align-items-center mb-1">
+              <span class="fw-bold me-2">imran_dev999</span>
+              <span class="badge bg-light text-dark border me-2"
+                ><i class="ri-repeat-line me-1"></i>Repeat Client</span
+              >
+              <span class="badge bg-secondary me-2">Pakistan</span>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <span class="text-warning me-2">
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+              </span>
+              <span class="text-muted small">1 month ago</span>
+            </div>
+            <div class="mb-2">
+              It was very good experience work with him. He is professional and
+              creative in logo design. Highly recommended for website designing.
+            </div>
+            <div class="text-muted small">
+              Helpful? <a href="#" class="text-decoration-none">Yes</a>
+              <a href="#" class="text-decoration-none ms-2">No</a>
+            </div>
+          </div>
+          <!-- Review 3 -->
+          <div class="rounded-3 border p-4">
+            <div class="d-flex align-items-center mb-1">
+              <span class="fw-bold me-2">imran_dev999</span>
+              <span class="badge bg-light text-dark border me-2"
+                ><i class="ri-repeat-line me-1"></i>Repeat Client</span
+              >
+              <span class="badge bg-secondary me-2">Pakistan</span>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <span class="text-warning me-2">
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-line"></i>
+                <i class="ri-star-s-line"></i>
+              </span>
+              <span class="text-muted small">5 days ago</span>
+            </div>
+            <div class="mb-2">
+              This project just went well but too much time and multiple
+              delivery will cost further more.
+            </div>
+            <div class="text-muted small">
+              Helpful? <a href="#" class="text-decoration-none">Yes</a>
+              <a href="#" class="text-decoration-none ms-2">No</a>
+            </div>
+          </div>
+          <!-- Review 4 -->
+          <div class="rounded-3 border p-4">
+            <div class="d-flex align-items-center mb-1">
+              <span class="fw-bold me-2">gizm0dder</span>
+              <span class="badge bg-secondary me-2">Mauritius</span>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <span class="text-warning me-2">
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+              </span>
+              <span class="text-muted small">3 months ago</span>
+            </div>
+            <div class="mb-2">
+              First time working with dev and it was a very good experience.
+              Developer provided quality work. It was front work, and he made
+              sure the design is working properly, is responsive and without any
+              bulky code. We required the code to be tailwind and alpine js
+              only, and it was indeed quality work. Thanks for that.
+            </div>
+            <div class="text-muted small">
+              Helpful? <a href="#" class="text-decoration-none">Yes</a>
+              <a href="#" class="text-decoration-none ms-2">No</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Booking Calendar Modal -->
+    <div
+      class="modal fade"
+      id="bookingModal"
+      tabindex="-1"
+      aria-labelledby="bookingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content shadow-lg border-0 rounded-4">
+          <div
+            class="modal-header border-0 bg-primary text-white rounded-top-4"
+          >
+            <h5 class="modal-title fw-bold text-center" id="bookingModalLabel">
+              Book a Free Call
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center py-4">
+            <div class="mb-2 text-secondary">
+              Select a date and time for your call. We’ll confirm your booking
+              instantly!
+            </div>
+            <div class="d-flex justify-content-center">
+              <div
+                id="bookingCalendar"
+                class="my-4 bg-white p-3 rounded-3 shadow-sm"
+                style="max-width: 350px"
+              ></div>
+            </div>
+            <button
+              id="confirmBookingBtn"
+              class="btn btn-primary px-4 py-2 mt-2"
+            >
+              Confirm
+            </button>
+            <button
+              class="btn btn-outline-secondary ms-2 px-4 py-2 mt-2"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <div
+              id="bookingSelectedMsg"
+              class="mt-3 text-success fw-semibold"
+              style="display: none"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Request Pricing Modal -->
+    <div
+      class="modal fade"
+      id="requestPricingModal"
+      tabindex="-1"
+      aria-labelledby="requestPricingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div
+          class="modal-content shadow-lg border-0 rounded-4 p-2 p-md-3"
+          style="margin: auto; max-height: 92vh; overflow: hidden"
+        >
+          <button
+            type="button"
+            class="btn-close position-absolute end-0 top-0 mt-2 me-md-5 me-1 bg-secondary-subtle p-2 rounded-circle shadow-sm"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+            style="z-index: 2"
+          ></button>
+          <div
+            class="modal-body"
+            style="overflow-y: auto; max-height: 80vh; padding-top: 2.5rem"
+          >
+            <h2
+              class="fw-bold text-primary text-center mb-2"
+              style="font-size: 2rem"
+            >
+              REQUEST PRICING
+            </h2>
+            <div
+              class="text-center mb-4 text-secondary"
+              style="font-size: 1.05em"
+            >
+              We look forward to doing business with you. If you require any
+              further information, feel free to contact us
+            </div>
+            <form class="mb-3">
+              <div class="row g-3 mb-2">
+                <div class="col-12 col-md-6">
+                  <label class="form-label mb-1"
+                    >Name<span class="text-danger">*</span></label
+                  >
+                  <input type="text" class="form-control" required />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label mb-1"
+                    >Email<span class="text-danger">*</span></label
+                  >
+                  <input type="email" class="form-control" required />
+                </div>
+                <div class="col-12">
+                  <label class="form-label mb-1"
+                    >Phone
+                    <span class="text-muted" style="font-size: 0.9em"
+                      >(optional)</span
+                    ></label
+                  >
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label mb-1">Message</label>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 py-2">
+                Request pricing
+              </button>
+            </form>
+            <div class="d-flex align-items-center my-4">
+              <hr class="flex-grow-1" />
+              <span class="mx-3 text-secondary fw-semibold">OR</span>
+              <hr class="flex-grow-1" />
+            </div>
+            <div class="row align-items-center g-0">
+              <div class="col-12 col-md-6">
+                <div
+                  class="mb-2 fw-bold text-primary"
+                  style="font-size: 1.3rem"
+                >
+                  Discuss your idea<br />with our
+                  <span class="text-success">live Agent</span>
+                </div>
+                <div class="mb-3 text-secondary" style="font-size: 0.98em">
+                  Whether you are a business owner or interested in exploring,
+                  <a href="#" class="text-primary">LoopaWeb’s Agent</a> will
+                  help you understand how Web apps can be designed to meet your
+                  needs.
+                </div>
+                <a
+                  href="#"
+                  class="openTawkChat btn btn-outline-primary px-3 py-2 mb-2"
+                  style="font-weight: 500"
+                >
+                  <span style="color: #23b571; font-size: 1.2em">•</span> Chat
+                  now
+                </a>
+              </div>
+              <div class="col-12 col-md-6 text-center mt-3 mt-md-0">
+                <img
+                  src="./project-images/Agent-Illustration.svg"
+                  alt="Agent Illustration"
+                  style="max-width: 120px; width: 100%"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <!-- {{-- Bootstrap js --}} -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const defaultNavbar = document.getElementById("default-navbar");
+        const scrolledNavbar = document.getElementById("scrolled-navbar");
+        const navbarHeight = defaultNavbar.offsetHeight;
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > navbarHeight) {
+            scrolledNavbar.style.display = "block";
+          } else {
+            scrolledNavbar.style.display = "none";
+          }
+        });
+      });
+    </script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/68569c34151f2b190c06b3a3/1iu954bno";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var bookingBtns = document.querySelectorAll(".openBookingModal");
+        var selectedDate = null;
+        bookingBtns.forEach(function (bookingBtn) {
+          bookingBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            // Close Welcome Modal if open
+            var welcomeModalEl = document.getElementById("welcomeModal");
+            if (welcomeModalEl) {
+              var welcomeModal =
+                bootstrap.Modal.getInstance(welcomeModalEl) ||
+                new bootstrap.Modal(welcomeModalEl);
+              welcomeModal.hide();
+            }
+            // Open Booking Modal
+            var bookingModal = new bootstrap.Modal(
+              document.getElementById("bookingModal")
+            );
+            bookingModal.show();
+          });
+        });
+        // Initialize Flatpickr inline calendar (no input)
+        if (window.flatpickr) {
+          flatpickr("#bookingCalendar", {
+            inline: true,
+            enableTime: true,
+            dateFormat: "Y-m-d H:i",
+            minDate: null, // allow any date
+            onChange: function (selectedDates, dateStr) {
+              selectedDate = dateStr;
+              document.getElementById("bookingSelectedMsg").style.display =
+                "none";
+            },
+          });
+        }
+        // Confirm button logic
+        var confirmBtn = document.getElementById("confirmBookingBtn");
+        if (confirmBtn) {
+          confirmBtn.addEventListener("click", function () {
+            if (selectedDate) {
+              document.getElementById("bookingSelectedMsg").textContent =
+                "You selected: " + selectedDate;
+              document.getElementById("bookingSelectedMsg").style.display =
+                "block";
+            } else {
+              document.getElementById("bookingSelectedMsg").textContent =
+                "Please select a date and time.";
+              document.getElementById("bookingSelectedMsg").style.display =
+                "block";
+            }
+          });
+        }
+      });
+    </script>
+
+    <!-- {{-- Clicking on the chat now button in Modal --}} -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var chatBtns = document.querySelectorAll(".openTawkChat");
+        chatBtns.forEach(function (chatBtn) {
+          chatBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            if (typeof Tawk_API !== "undefined" && Tawk_API.maximize) {
+              Tawk_API.maximize();
+            }
+          });
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Request Pricing Modal logic
+        var pricingBtns = document.querySelectorAll(".openRequestPricingModal");
+        pricingBtns.forEach(function (btn) {
+          btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            // Close other modals if open
+            var bookingModalEl = document.getElementById("bookingModal");
+            if (bookingModalEl) {
+              var bookingModal =
+                bootstrap.Modal.getInstance(bookingModalEl) ||
+                new bootstrap.Modal(bookingModalEl);
+              bookingModal.hide();
+            }
+            var welcomeModalEl = document.getElementById("welcomeModal");
+            if (welcomeModalEl) {
+              var welcomeModal =
+                bootstrap.Modal.getInstance(welcomeModalEl) ||
+                new bootstrap.Modal(welcomeModalEl);
+              welcomeModal.hide();
+            }
+            // Open Request Pricing Modal
+            var pricingModal = new bootstrap.Modal(
+              document.getElementById("requestPricingModal")
+            );
+            pricingModal.show();
+          });
+        });
+      });
+    </script>
+
+    <!-- {{-- Welocome Message Modal --}} -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+          var welcomeModal = new bootstrap.Modal(
+            document.getElementById("welcomeModal")
+          );
+          welcomeModal.show();
+        }, 2000); // 25 seconds
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.getElementById("industries-carousel");
+        const prevBtn = document.getElementById("industries-prev");
+        const nextBtn = document.getElementById("industries-next");
+        const cardWidth = 340; // width + gap
+        prevBtn.addEventListener("click", () => {
+          carousel.scrollBy({
+            left: -cardWidth,
+            behavior: "smooth",
+          });
+        });
+        nextBtn.addEventListener("click", () => {
+          carousel.scrollBy({
+            left: cardWidth,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // ...existing industries carousel code...
+        const portfolioCarousel = document.getElementById("portfolio-carousel");
+        const portfolioPrev = document.getElementById("portfolio-prev");
+        const portfolioNext = document.getElementById("portfolio-next");
+        const portfolioCardWidth = 394; // width + gap
+        const totalPortfolioCards = portfolioCarousel.children.length;
+
+        function scrollPortfolioNext() {
+          if (
+            portfolioCarousel.scrollLeft >=
+            portfolioCardWidth * (totalPortfolioCards - 1) - 10
+          ) {
+            portfolioCarousel.scrollTo({
+              left: 0,
+              behavior: "smooth",
+            });
+          } else {
+            portfolioCarousel.scrollBy({
+              left: portfolioCardWidth,
+              behavior: "smooth",
+            });
+          }
+        }
+
+        function scrollPortfolioPrev() {
+          if (portfolioCarousel.scrollLeft <= 0) {
+            portfolioCarousel.scrollTo({
+              left: portfolioCardWidth * (totalPortfolioCards - 1),
+              behavior: "smooth",
+            });
+          } else {
+            portfolioCarousel.scrollBy({
+              left: -portfolioCardWidth,
+              behavior: "smooth",
+            });
+          }
+        }
+        portfolioPrev.addEventListener("click", scrollPortfolioPrev);
+        portfolioNext.addEventListener("click", scrollPortfolioNext);
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.getElementById("services-carousel");
+        const prevBtn = document.getElementById("services-prev");
+        const nextBtn = document.getElementById("services-next");
+        const cardWidth = 340; // width + gap
+        function updateButtons() {
+          prevBtn.classList.toggle("d-none", carousel.scrollLeft <= 10);
+          nextBtn.classList.toggle(
+            "d-none",
+            carousel.scrollLeft + carousel.offsetWidth >=
+              carousel.scrollWidth - 10
+          );
+        }
+        prevBtn.addEventListener("click", () => {
+          carousel.scrollBy({
+            left: -cardWidth,
+            behavior: "smooth",
+          });
+          setTimeout(updateButtons, 400);
+        });
+        nextBtn.addEventListener("click", () => {
+          carousel.scrollBy({
+            left: cardWidth,
+            behavior: "smooth",
+          });
+          setTimeout(updateButtons, 400);
+        });
+        carousel.addEventListener("scroll", updateButtons);
+        updateButtons();
+      });
+    </script>
+  </body>
+</html>

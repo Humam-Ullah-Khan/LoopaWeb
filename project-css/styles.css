@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+    /* Color Palette */
+    --primary-color: #0d6efd; /* Teal for main buttons, headers, and navigation */
+    --accent-color: #1d7ccf; /* Golden yellow for highlights and CTAs */
+    --neutral-white: #ffffff; /* White for main backgrounds and text on dark backgrounds */
+    --neutral-light-gray: #f9f7f3; /* Light gray for secondary backgrounds and sections */
+    --neutral-dark-gray: #eddea4; /* Dark gray for body text */
+    --neutral-charcoal: #1a1a1a; /* Charcoal for footer and dark-themed sections */
+
+    /* Typography */
+    --font-heading: "Poppins", sans-serif; /* Modern, bold font for headings */
+    --font-body: "Instrument sans"; /* Clean, readable font for body text */
+    --font-navs: "Ubuntu"; /* Clean, readable font for body text */
+    --font-size-h1: 48px; /* Large heading size for desktop */
+    --font-size-h2: 32px; /* Medium heading size for desktop */
+    --font-size-h3: 24px; /* Small heading size for desktop */
+    --font-size-body: 16px; /* Standard body text size for desktop */
+    --font-size-caption: 14px; /* Smaller text for captions or secondary info */
+    --line-height-heading: 1.4; /* Line height for headings to ensure readability */
+    --line-height-body: 1.6; /* Line height for body text for better readability */
+
+    /* Responsive Typography */
+    --font-size-h1-mobile: 36px; /* H1 size for mobile devices */
+    --font-size-h2-mobile: 24px; /* H2 size for mobile devices */
+    --font-size-h3-mobile: 18px; /* H3 size for mobile devices */
+    --font-size-body-mobile: 14px; /* Body text size for mobile devices */
+    --font-size-caption-mobile: 12px; /* Caption text size for mobile devices */
+
+    /* Buttons */
+    --button-border-radius: 8px; /* Rounded corners for buttons */
+    --button-padding: 12px 24px; /* Padding for buttons to ensure touch-friendly size */
+    --button-font-size: 16px; /* Font size for button text */
+    --button-border-width: 2px; /* Border width for secondary buttons */
+
+    /* Shadows */
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards and buttons */
+
+    /* Transitions */
+    --transition-speed: 0.3s; /* Speed for hover and animation effects */
+    --transition-easing: ease; /* Smooth easing for transitions */
+}
+
+body {
+    background-color: var(--neutral-light-gray) !important;
+    font-family: var(--font-body) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--font-heading);
+}
+
+.navbar {
+    background-color: #000 !important;
+    transition: var(--transition-speed);
+}
+.navbar:hover {
+    background-color: #fff !important;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        background-color: #fff !important;
+    }
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-family: var(--font-navs);
+    font-weight: normal !important;
+}
+
+.navbar-nav .nav-item .nav-link:active {
+    color: var(--accent-color);
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+.navbar-nav .nav-item .nav-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: var(
+        --primary-color,
+        #007bff
+    ); /* fallback to Bootstrap primary */
+    transition: width 0.6s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after,
+.navbar-nav .nav-item .nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-collapse .btn-primary {
+    font-family: var(--font-body);
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.btn-primary {
+    background-color: var(--accent-color) !important;
+    font-weight: 600 !important;
+    /* font-family: var(--font-navs); */
+    font-family: "macan";
+}
+
+.footer-section {
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 2px 32px rgba(0, 0, 0, 0.04);
+}
+.footer-section .fw-bold {
+    font-size: 1.4rem;
+}
+.footer-section .mb-1,
+.footer-section .mb-2 {
+    font-size: 1.08rem;
+}
+.footer-section a.text-dark,
+.footer-section a.text-muted {
+    font-family: var(--font-navs);
+    transition: all var(--transition-speed);
+}
+
+.footer-section a.text-dark:hover,
+.footer-section a.text-muted:hover {
+    color: var(--primary-color) !important;
+}
+.footer-section hr {
+    border-top: 1px solid #ddd;
+}
+
+.footer-section abbr {
+    background-color: var(--primary-color);
+}
+
+.home-hero-section {
+    font-family: var(--font-heading);
+}
+
+.home-hero-section {
+}
+
+#industries-carousel,
+#portfolio-carousel,
+#services-carousel {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+#industries-carousel::-webkit-scrollbar,
+#portfolio-carousel::-webkit-scrollbar,
+#services-carousel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.services-section .service-card {
+    box-shadow: 0 2px 12px rgba(60, 60, 60, 0.06);
+    transition: box-shadow 0.2s;
+    padding: 1.25rem !important;
+}
+.services-section .service-card:hover {
+    box-shadow: 0 4px 24px rgba(60, 60, 60, 0.12);
+}
+.services-section .service-card h6 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+.services-section .service-card ul li {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+.services-section .service-card ul li:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+    #services-carousel {
+        gap: 1rem !important;
+    }
+    .services-section .service-card {
+        width: 260px !important;
+    }
+}
